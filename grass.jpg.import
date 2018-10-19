@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex"
+path="res://.import/grass.jpg-0ba16f44b526d55533634fdbc2c9d424.stex"
 
 [deps]
 
-source_file="res://assets/icon.png"
-source_md5="c3558f79862e8e00c74fb188280dd8ef"
+source_file="res://assets/grass.jpg"
+source_md5="b87d7c06808b0f4f20900c36864f29e9"
 
-dest_files=[ "res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex" ]
-dest_md5="faf846ccd89e2edfcabb6f1c3125aa7e"
+dest_files=[ "res://.import/grass.jpg-0ba16f44b526d55533634fdbc2c9d424.stex" ]
+dest_md5="412cedcd658969477d8b4dba02d80f65"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

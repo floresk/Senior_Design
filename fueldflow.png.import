@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex"
+path="res://.import/fueldflow.png-970c0518cdb479bc21b0d8791d09a2e7.stex"
 
 [deps]
 
-source_file="res://assets/icon.png"
-source_md5="c3558f79862e8e00c74fb188280dd8ef"
+source_file="res://assets/GUI/fueldflow.png"
+source_md5="0a86675053651b092ce86b57712b1c68"
 
-dest_files=[ "res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex" ]
-dest_md5="faf846ccd89e2edfcabb6f1c3125aa7e"
+dest_files=[ "res://.import/fueldflow.png-970c0518cdb479bc21b0d8791d09a2e7.stex" ]
+dest_md5="de9ddf11f0cba99dfef9a50d70880ea7"
 
 [params]
 

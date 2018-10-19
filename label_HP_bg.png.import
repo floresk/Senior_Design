@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex"
+path="res://.import/label_HP_bg.png-0ade9900f173b49381a4369c24e883c0.stex"
 
 [deps]
 
-source_file="res://assets/icon.png"
-source_md5="c3558f79862e8e00c74fb188280dd8ef"
+source_file="res://assets/GUI/label_HP_bg.png"
+source_md5="7eee3747bf3d410a21bf88caa82b4ab4"
 
-dest_files=[ "res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex" ]
-dest_md5="faf846ccd89e2edfcabb6f1c3125aa7e"
+dest_files=[ "res://.import/label_HP_bg.png-0ade9900f173b49381a4369c24e883c0.stex" ]
+dest_md5="0de92b8c6458f2c82208e574e3235e90"
 
 [params]
 

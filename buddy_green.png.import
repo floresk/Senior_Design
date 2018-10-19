@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex"
+path="res://.import/buddy_green.png-bfedc100338b2ddd47d287e2c0286427.stex"
 
 [deps]
 
-source_file="res://assets/icon.png"
-source_md5="c3558f79862e8e00c74fb188280dd8ef"
+source_file="res://assets/chararacters/buddy_green.png"
+source_md5="c4528aa19c3ddcd0fed29ad83f2e2d2b"
 
-dest_files=[ "res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex" ]
-dest_md5="faf846ccd89e2edfcabb6f1c3125aa7e"
+dest_files=[ "res://.import/buddy_green.png-bfedc100338b2ddd47d287e2c0286427.stex" ]
+dest_md5="41242cebadee472743731cb60c3f509b"
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex"
+path="res://.import/altitudebar copy.png-a357479c6194db1bed84acbb03bd5e90.stex"
 
 [deps]
 
-source_file="res://assets/icon.png"
-source_md5="c3558f79862e8e00c74fb188280dd8ef"
+source_file="res://assets/GUI/altitudebar copy.png"
+source_md5="e925bf8639a2572f693028a3385fd755"
 
-dest_files=[ "res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex" ]
-dest_md5="faf846ccd89e2edfcabb6f1c3125aa7e"
+dest_files=[ "res://.import/altitudebar copy.png-a357479c6194db1bed84acbb03bd5e90.stex" ]
+dest_md5="36271fbb7c60d16110b50b8952918ef1"
 
 [params]
 
