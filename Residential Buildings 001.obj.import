@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Residential Buildings 001.obj-b511ed419c6cd4eed5941729591341e5.mesh"
+
+[deps]
+
+files=[ "res://.import/Residential Buildings 001.obj-b511ed419c6cd4eed5941729591341e5.mesh" ]
+
+source_file="res://Residential Buildings 001.obj"
+source_md5="ec591afc31f915bc647eac38d014a280"
+
+dest_files=[ "res://.import/Residential Buildings 001.obj-b511ed419c6cd4eed5941729591341e5.mesh", "res://.import/Residential Buildings 001.obj-b511ed419c6cd4eed5941729591341e5.mesh" ]
+dest_md5="dea5dd347c9be5d43bcb85bf1c63f5dc"
+
+[params]
+
+generate_tangents=true

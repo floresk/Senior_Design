@@ -1,0 +1,348 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
+albedo_color = Color( 0.851562, 0.529079, 0.114457, 1 )
+metallic = 0.0
+metallic_specular = 0.5
+metallic_texture_channel = 0
+roughness = 0.0
+roughness_texture_channel = 0
+emission_enabled = true
+emission = Color( 0.890625, 0.693706, 0.102949, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = false
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Albedo", "Emission", "Metallic" ]
+
+[sub_resource type="Curve" id=2]
+
+min_value = -200.0
+max_value = 200.0
+bake_resolution = 100
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=3]
+
+flags = 4
+width = 2048
+curve = SubResource( 2 )
+
+[sub_resource type="ParticlesMaterial" id=4]
+
+render_priority = 0
+trail_divisor = 1
+emission_shape = 1
+emission_sphere_radius = 1.0
+flag_align_y = false
+flag_rotate_y = false
+flag_disable_z = false
+spread = 100.0
+flatness = 0.0
+gravity = Vector3( 0, -9.8, 0 )
+initial_velocity = 10.0
+initial_velocity_random = 0.0
+angular_velocity = 15.0
+angular_velocity_random = 0.0
+linear_accel = 0.0
+linear_accel_random = 0.0
+radial_accel = 10.0
+radial_accel_random = 1.0
+radial_accel_curve = SubResource( 3 )
+tangential_accel = 0.0
+tangential_accel_random = 0.0
+damping = 0.0
+damping_random = 0.0
+angle = 0.0
+angle_random = 0.0
+scale = 1.0
+scale_random = 0.0
+color = Color( 0.875, 0.0752688, 0.0752688, 1 )
+hue_variation = 0.0
+hue_variation_random = 0.0
+anim_speed = 0.0
+anim_speed_random = 0.0
+anim_offset = 0.0
+anim_offset_random = 0.0
+anim_loop = false
+_sections_unfolded = [ "Color", "Emission Shape", "Gravity", "Initial Velocity", "Radial Accel", "Spread", "Trail" ]
+
+[sub_resource type="SpatialMaterial" id=5]
+
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
+albedo_color = Color( 0.945312, 0.243316, 0.0813172, 1 )
+albedo_texture = ExtResource( 1 )
+metallic = 0.0
+metallic_specular = 0.5
+metallic_texture = ExtResource( 1 )
+metallic_texture_channel = 0
+roughness = 0.02
+roughness_texture = ExtResource( 1 )
+roughness_texture_channel = 0
+emission_enabled = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = true
+detail_blend_mode = 0
+detail_uv_layer = 0
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Albedo", "Detail", "Metallic", "Roughness" ]
+
+[sub_resource type="SphereMesh" id=6]
+
+material = SubResource( 5 )
+radius = 0.1
+height = 0.2
+radial_segments = 30
+rings = 30
+is_hemisphere = false
+
+[sub_resource type="SpatialMaterial" id=7]
+
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
+albedo_color = Color( 0.816406, 0.497635, 0.0877856, 1 )
+metallic = 0.0
+metallic_specular = 0.5
+metallic_texture_channel = 0
+roughness = 0.0
+roughness_texture_channel = 0
+emission_enabled = true
+emission = Color( 0.945312, 0.0508233, 0.0508233, 1 )
+emission_energy = 5.0
+emission_operator = 0
+emission_on_uv2 = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = false
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+_sections_unfolded = [ "Albedo", "Emission", "Metallic", "Vertex Color" ]
+
+[sub_resource type="ParticlesMaterial" id=8]
+
+render_priority = 0
+trail_divisor = 5
+emission_shape = 0
+flag_align_y = false
+flag_rotate_y = false
+flag_disable_z = false
+spread = 100.0
+flatness = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1.0
+initial_velocity_random = 0.0
+angular_velocity = -1.58495e+29
+angular_velocity_random = 0.0
+linear_accel = 0.0
+linear_accel_random = 0.0
+radial_accel = 0.04
+radial_accel_random = 0.0
+tangential_accel = 0.0
+tangential_accel_random = 0.0
+damping = 0.0
+damping_random = 0.0
+angle = 0.0
+angle_random = 0.0
+scale = 1.0
+scale_random = 0.0
+color = Color( 1, 1, 1, 1 )
+hue_variation = 0.0
+hue_variation_random = 0.0
+anim_speed = 0.0
+anim_speed_random = 0.0
+anim_offset = 0.0
+anim_offset_random = 0.0
+anim_loop = false
+_sections_unfolded = [ "Emission Shape", "Gravity", "Radial Accel", "Spread", "Trail" ]
+
+[sub_resource type="SphereMesh" id=9]
+
+radius = 0.1
+height = 0.1
+radial_segments = 64
+rings = 32
+is_hemisphere = false
+
+[node name="Spatial" type="Spatial" index="0"]
+
+transform = Transform( 0.999184, -0.0403937, 0, 0.0403787, 0.998813, 0.0272525, -0.00110083, -0.0272302, 0.999629, 0, -1.62545, 0 )
+visible = false
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Particles" type="Particles" parent="." index="0"]
+
+transform = Transform( 1, -7.04949e-09, 0, 2.12094e-09, -0.999876, 0.0157509, 3.49246e-10, -0.0157509, -0.999876, -0.194844, 0.886911, 0.106241 )
+layers = 1
+material_override = SubResource( 1 )
+cast_shadow = 0
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+emitting = true
+amount = 50
+lifetime = 1.0
+one_shot = false
+preprocess = 1.0
+speed_scale = 3.0
+explosiveness = 1.0
+randomness = 1.0
+fixed_fps = 0
+fract_delta = true
+visibility_aabb = AABB( -4.41992, -5.33499, -4.48975, 9.76269, 10.7481, 8 )
+local_coords = true
+draw_order = 0
+process_material = SubResource( 4 )
+draw_passes = 3
+draw_pass_1 = SubResource( 6 )
+draw_pass_2 = null
+draw_pass_3 = null
+_sections_unfolded = [ "Draw Passes", "Drawing", "Geometry", "LOD", "Process Material", "Time" ]
+
+[node name="Particles2" type="Particles" parent="." index="1"]
+
+transform = Transform( 0.997578, -0.0695414, 0.00109547, -0.06955, -0.997455, 0.0157127, 0, -0.0157509, -0.999876, -0.361149, -1.47374, -1.23665 )
+layers = 1
+material_override = SubResource( 7 )
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 1000.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 10000.0
+lod_max_hysteresis = 0.0
+emitting = true
+amount = 200
+lifetime = 1.0
+one_shot = false
+preprocess = 1.0
+speed_scale = 30.0
+explosiveness = 1.0
+randomness = 1.0
+fixed_fps = 0
+fract_delta = true
+visibility_aabb = AABB( -12.9048, -4.77489, -8.40753, 25.8096, 9.75974, 18.4059 )
+local_coords = true
+draw_order = 0
+process_material = SubResource( 8 )
+draw_passes = 1
+draw_pass_1 = SubResource( 9 )
+_sections_unfolded = [ "Draw Passes", "Geometry", "LOD", "Process Material", "Time" ]
+
+

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/The City.obj-ecb156f2df16cff8f54464f531098614.mesh"
+
+[deps]
+
+files=[ "res://.import/The City.obj-ecb156f2df16cff8f54464f531098614.mesh" ]
+
+source_file="res://The City.obj"
+source_md5="4049479182c4c1fbde7d3e3573329800"
+
+dest_files=[ "res://.import/The City.obj-ecb156f2df16cff8f54464f531098614.mesh", "res://.import/The City.obj-ecb156f2df16cff8f54464f531098614.mesh" ]
+dest_md5="c40c9cd28d3df03041b2766066f26449"
+
+[params]
+
+generate_tangents=true

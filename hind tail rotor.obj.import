@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hind tail rotor.obj-d7161a20cb13442c2d28d379d09a71c6.mesh"
+
+[deps]
+
+files=[ "res://.import/hind tail rotor.obj-d7161a20cb13442c2d28d379d09a71c6.mesh" ]
+
+source_file="res://hind tail rotor.obj"
+source_md5="af84800b6ad99e9242f6556e90bb81c5"
+
+dest_files=[ "res://.import/hind tail rotor.obj-d7161a20cb13442c2d28d379d09a71c6.mesh", "res://.import/hind tail rotor.obj-d7161a20cb13442c2d28d379d09a71c6.mesh" ]
+dest_md5="ccd342a064ed1dc70149320135c80832"
+
+[params]
+
+generate_tangents=true

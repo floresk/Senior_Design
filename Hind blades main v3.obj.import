@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hind blades main v3.obj-b5ca6274236f2af63311365ce30e556f.mesh"
+
+[deps]
+
+files=[ "res://.import/Hind blades main v3.obj-b5ca6274236f2af63311365ce30e556f.mesh" ]
+
+source_file="res://Hind blades main v3.obj"
+source_md5="10092f834a93fe4e600447bbf1391cf2"
+
+dest_files=[ "res://.import/Hind blades main v3.obj-b5ca6274236f2af63311365ce30e556f.mesh", "res://.import/Hind blades main v3.obj-b5ca6274236f2af63311365ce30e556f.mesh" ]
+dest_md5="dfebd9eb3472a83fc17eeda5e20fd6fb"
+
+[params]
+
+generate_tangents=true

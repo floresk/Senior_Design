@@ -1,0 +1,269 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://cubio.gd" type="Script" id=1]
+[ext_resource path="res://Arrow.gd" type="Script" id=2]
+[ext_resource path="res://hind tail rotor.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Hind blades main v3.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://follow_camera.gd" type="Script" id=5]
+[ext_resource path="res://explosion.tscn" type="PackedScene" id=6]
+
+[sub_resource type="PrismMesh" id=1]
+
+left_to_right = 0.5
+size = Vector3( 2, 2, 2 )
+subdivide_width = 0
+subdivide_height = 0
+subdivide_depth = 0
+
+[sub_resource type="CubeMesh" id=2]
+
+size = Vector3( 2, 2, 2 )
+subdivide_width = 0
+subdivide_height = 0
+subdivide_depth = 0
+
+[sub_resource type="CapsuleMesh" id=3]
+
+radius = 1.0
+mid_height = 1.0
+radial_segments = 64
+rings = 8
+
+[sub_resource type="BoxShape" id=4]
+
+extents = Vector3( 7.7489, 3.11825, 2.21145 )
+
+[node name="cubio" type="KinematicBody"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.55862, 30, 8.01683 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+axis_lock_linear_x = false
+axis_lock_linear_y = false
+axis_lock_linear_z = false
+axis_lock_angular_x = false
+axis_lock_angular_y = false
+axis_lock_angular_z = false
+collision/safe_margin = 0.001
+script = ExtResource( 1 )
+_sections_unfolded = [ "Axis Lock", "Collision", "Transform", "collision" ]
+
+[node name="Arrow" type="MeshInstance" parent="." index="0"]
+
+transform = Transform( -0.000239795, -0.00223651, -1.02877e-11, 1.12364, -0.120475, 0, 0, 0, 0, -0.0128825, 0.267193, -0.137048 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 1 )
+skeleton = NodePath("..")
+material/0 = null
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="tail_rotor" type="Spatial" parent="." index="1"]
+
+transform = Transform( 0.900715, -0.424053, -0.0942928, 0.422303, 0.905624, -0.0387965, 0.101846, -0.00487548, 0.994788, 6.91664, 0, 0.14623 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="tail_rotor" type="MeshInstance" parent="tail_rotor" index="0"]
+
+transform = Transform( -0.0652536, -0.0004986, 0.596441, -0.00341176, 0.59999, 0.000128304, -0.596431, -0.00337756, -0.0652554, 0.251793, -0.16584, 0.140142 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 3 )
+skeleton = NodePath("..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+material/43 = null
+material/44 = null
+material/45 = null
+material/46 = null
+material/47 = null
+material/48 = null
+material/49 = null
+material/50 = null
+material/51 = null
+material/52 = null
+material/53 = null
+material/54 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="tail" type="MeshInstance" parent="." index="2"]
+
+editor/display_folded = true
+transform = Transform( 0.00615622, -0.00045343, -2.99937, 0.00260928, 0.299988, -0.00399981, 0.299925, -0.00260052, 0.0615993, 4.58909, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 2 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="main_rotor" type="Spatial" parent="." index="3"]
+
+transform = Transform( 0.95, 0, 0, 0, 0.95, 0, 0, 0, 0, -0.0111599, 1.00862, -0.137048 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="main_rotor" type="MeshInstance" parent="main_rotor" index="0"]
+
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 4 )
+skeleton = NodePath("..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="cube" type="MeshInstance" parent="." index="4"]
+
+_import_path = NodePath("cube-col")
+transform = Transform( 2.6, 0, 0, 0, 1.3034, 0, 0, 0, 1, -0.00206995, 0.187094, -0.137048 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 3 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Geometry", "Transform", "material" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="." index="5"]
+
+editor/display_folded = true
+transform = Transform( 0.95, 0, 0, 0, -4.15258e-08, -0.95, 0, 0.95, -4.15258e-08, 0, 0, 0 )
+shape = SubResource( 4 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="target" type="Spatial" parent="." index="6"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85165, 0 )
+
+[node name="camera" type="Camera" parent="target" index="0"]
+
+transform = Transform( -0.00555813, -0.799141, -0.601118, 0.00738881, -0.601143, 0.799107, -0.999957, 0, 0.00924594, 15.7988, 10.3229, 0.120926 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = true
+fov = 40.0
+size = 1.0
+near = 0.1
+far = 200.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="GridMap" type="GridMap" parent="." index="7"]
+
+editor/display_folded = true
+theme = null
+cell_size = Vector3( 2, 2, 2 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="explosion" parent="." index="8" instance=ExtResource( 6 )]
+
+editor/display_folded = true
+
+
